@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  featured: false
+  category: MyString
+  name: MyString
+  description: MyText
+  datetime: 2022-05-06 10:24:55
+  website_url: MyString
+  thumbnail_url: MyText
+  banner_url: MyText
+  venue: one
+
+two:
+  featured: false
+  category: MyString
+  name: MyString
+  description: MyText
+  datetime: 2022-05-06 10:24:55
+  website_url: MyString
+  thumbnail_url: MyText
+  banner_url: MyText
+  venue: two

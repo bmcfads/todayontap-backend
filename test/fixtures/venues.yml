@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  featured: false
+  category: MyString
+  name: MyString
+  description: MyText
+  street: MyString
+  city: MyString
+  province: MyString
+  postal_code: MyString
+  slug: MyString
+  website_url: MyString
+  thumbnail_url: MyText
+  banner_url: MyText
+  google_maps_embed_url: MyText
+
+two:
+  featured: false
+  category: MyString
+  name: MyString
+  description: MyText
+  street: MyString
+  city: MyString
+  province: MyString
+  postal_code: MyString
+  slug: MyString
+  website_url: MyString
+  thumbnail_url: MyText
+  banner_url: MyText
+  google_maps_embed_url: MyText
