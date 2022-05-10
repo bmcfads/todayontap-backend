@@ -9,7 +9,7 @@ class V1::EventsController < ApplicationController
   end
 
   def timeframe
-    @events = Event.get_events_in_timeframe(params[:timeframe])
+    @events = Event.get_events_in_timeframe(params[:timeframe], params[:utc_offset])
     render :index
   end
 

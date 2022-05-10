@@ -4,9 +4,9 @@ class Event < ApplicationRecord
   validates :name, length: { maximum: 35 }
   validates :description, length: { maximum: 200 }
 
-  def self.get_events_in_timeframe(timeframe)
-    today_start = Date.today.to_time
-    tomorrow_start = Date.today.next_day.to_time
+  def self.get_events_in_timeframe(timeframe, offset = 0)
+    today_start = Time.current.beginning_of_day - offset
+    tomorrow_start = today_start.next_day
 
     case timeframe
     when 'all'
