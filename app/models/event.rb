@@ -5,7 +5,7 @@ class Event < ApplicationRecord
   validates :description, length: { maximum: 200 }
 
   def self.get_events_in_timeframe(timeframe, offset)
-    today_start = Time.current.beginning_of_day + offset.to_i
+    today_start = (Time.current - offset).beginning_of_day + offset
     tomorrow_start = today_start.next_day
 
     case timeframe
